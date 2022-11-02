@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тестовое | inssmart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <main class="container">
+    <div class="tab">
+      <ul class="tab__navigation">
+        <li class="tab__navigation-item">
+          <button class="tab__navigation-btn tab__navigation-btn_active" type="button">Горный велосипед</button>
+        </li>
+        <li class="tab__navigation-item">
+          <button class="tab__navigation-btn" type="button">Женский велосипед</button>
+        </li>
+      </ul>
+
+      <div class="tab__contents">
+        <div class="tab__content">
+          <button class="tab__toggle tab__toggle-active" type="button">
+            Горный велосипед
+            <svg class="tab__toggle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.7099 8.2101C18.6169 8.11638 18.5063 8.04198 18.3845 7.99121C18.2626 7.94044 18.1319 7.91431 17.9999 7.91431C17.8679 7.91431 17.7372 7.94044 17.6153 7.99121C17.4934 8.04198 17.3828 8.11638 17.2899 8.2101L12.7099 12.7901C12.6169 12.8838 12.5063 12.9582 12.3845 13.009C12.2626 13.0598 12.1319 13.0859 11.9999 13.0859C11.8679 13.0859 11.7372 13.0598 11.6153 13.009C11.4934 12.9582 11.3828 12.8838 11.2899 12.7901L6.70988 8.2101C6.61691 8.11638 6.50631 8.04198 6.38445 7.99121C6.26259 7.94044 6.13189 7.91431 5.99988 7.91431C5.86787 7.91431 5.73716 7.94044 5.6153 7.99121C5.49344 8.04198 5.38284 8.11638 5.28988 8.2101C5.10363 8.39747 4.99908 8.65092 4.99908 8.9151C4.99908 9.17929 5.10363 9.43274 5.28988 9.6201L9.87988 14.2101C10.4424 14.7719 11.2049 15.0875 11.9999 15.0875C12.7949 15.0875 13.5574 14.7719 14.1199 14.2101L18.7099 9.6201C18.8961 9.43274 19.0007 9.17929 19.0007 8.9151C19.0007 8.65092 18.8961 8.39747 18.7099 8.2101Z" fill="#0C0C0C"/>
+            </svg>
+          </button>
+          <div class="tab__content-content">
+            <section class="bike-info">
+              <header class="bike-info__header">
+                <picture class="bike-info__picture">
+                  <img class="bike-info__img" src="img/bike-1.jpg" alt="Мужицкий велосипед">
+                </picture>
+
+                <div>
+                  <h1 class="bike-info__title title">Велосипед STELS Navigator 510 HD 26 2022</h1>
+                  <p class="bike-info__paragraph">Данный велосипед с колесами 26 дюймов хорошо подходит высоким подросткам. Прогиб рамы и небольшой размер рамы расчитан на рост от 135 до 165 см.</p>
+                  <p class="bike-info__paragraph">Суммарный вес велосипеда был снижен до 16,9 кг, так как рама была изготовлена с учетом использования велосипеда подростками.</p>
+                </div>
+              </header>
+
+              <div class="bike-info__body">
+                <h2 class="bike-info__subtitle title">Характеристики</h2>
+                <ol class="bike-info__features">
+                  <li class="bike-info__feature">Двойной обод</li>
+                  <li class="bike-info__feature">Алюминиевый сплав</li>
+                  <li class="bike-info__feature">Колеса диаметром 26 дюймов</li>
+                  <li class="bike-info__feature">Покрышки 26х1,95"</li>
+                </ol>
+
+                <h2 class="bike-info__subtitle title">Добавить характеристику</h2>
+                <form class="bike-info__add-feature" action="/">
+                  <input class="bike-info__add-feature-input input" type="text" placeholder="Алюминиевый сплав" minlength="3" required>
+                  <button class="bike-info__add-feature-submit btn" type="submit">Добавить</button>
+                </form>
+
+                <div class="bike-info__prompt prompt">
+                  <button class="prompt__ok btn" type="button">Окей</button>
+                  <button class="prompt__cancel btn-light" type="button">Отмена</button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="tab__content tab__content_hidden">
+          <button class="tab__toggle" type="button">
+            Женский велосипед
+            <svg class="tab__toggle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.7099 8.2101C18.6169 8.11638 18.5063 8.04198 18.3845 7.99121C18.2626 7.94044 18.1319 7.91431 17.9999 7.91431C17.8679 7.91431 17.7372 7.94044 17.6153 7.99121C17.4934 8.04198 17.3828 8.11638 17.2899 8.2101L12.7099 12.7901C12.6169 12.8838 12.5063 12.9582 12.3845 13.009C12.2626 13.0598 12.1319 13.0859 11.9999 13.0859C11.8679 13.0859 11.7372 13.0598 11.6153 13.009C11.4934 12.9582 11.3828 12.8838 11.2899 12.7901L6.70988 8.2101C6.61691 8.11638 6.50631 8.04198 6.38445 7.99121C6.26259 7.94044 6.13189 7.91431 5.99988 7.91431C5.86787 7.91431 5.73716 7.94044 5.6153 7.99121C5.49344 8.04198 5.38284 8.11638 5.28988 8.2101C5.10363 8.39747 4.99908 8.65092 4.99908 8.9151C4.99908 9.17929 5.10363 9.43274 5.28988 9.6201L9.87988 14.2101C10.4424 14.7719 11.2049 15.0875 11.9999 15.0875C12.7949 15.0875 13.5574 14.7719 14.1199 14.2101L18.7099 9.6201C18.8961 9.43274 19.0007 9.17929 19.0007 8.9151C19.0007 8.65092 18.8961 8.39747 18.7099 8.2101Z" fill="#0C0C0C"/>
+            </svg>
+          </button>
+          <div class="tab__content-content tab__content-content_collapsed">
+            <section class="bike-info">
+              <header class="bike-info__header">
+                <picture class="bike-info__picture">
+                  <img class="bike-info__img" src="img/bike-2.jpg" alt="Женский велосипед">
+                </picture>
+
+                <div>
+                  <h1 class="bike-info__title title">Велосипед SCHWINN Traveler women 2022</h1>
+                  <p class="bike-info__paragraph">Женский велосипед со стальной рамой Classic step-true lightweight позволяет девушкам без проблем его перемещать.</p>
+                  <p class="bike-info__paragraph">На данном велосипеде имеется 7 скоростей с переключателями от Shimano, а жесткая вилка обеспечивает отличную управляемость. Подходит для катания по асфальтированным поверхностям.</p>
+                </div>
+              </header>
+
+              <div class="bike-info__body">
+                <h2 class="bike-info__subtitle title">Характеристики</h2>
+                <ol class="bike-info__features">
+                  <li class="bike-info__feature bike-info__feature_icon">Стальная рама</li>
+                  <li class="bike-info__feature bike-info__feature_icon">Жесткая вилка</li>
+                  <li class="bike-info__feature bike-info__feature_icon">Колеса диаметром 24 дюймов</li>
+                  <li class="bike-info__feature bike-info__feature_icon">7 скоростей</li>
+                </ol>
+
+                <h2 class="bike-info__subtitle title">Добавить характеристику</h2>
+                <form class="bike-info__add-feature" action="/">
+                  <input class="bike-info__add-feature-input input" type="text" placeholder="Алюминиевый сплав" minlength="3" required>
+                  <button class="bike-info__add-feature-submit btn" type="submit">Добавить</button>
+                </form>
+
+                <div class="bike-info__prompt prompt">
+                  <button class="prompt__ok btn" type="button">Окей</button>
+                  <button class="prompt__cancel btn-light" type="button">Отмена</button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

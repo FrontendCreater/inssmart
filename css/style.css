@@ -1,0 +1,384 @@
+:root {
+  --text-color: #494949;
+  --main-color: #0C0C0C;
+  --accent-color: #3922C5;
+  --accent-color-hover: #2C1A9A;
+  --accent-color-active: #1F1368;
+  --back-color: #F4F4F4;
+  --white-color: #FFFFFF;
+  --grey-color: #D9D9D9;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 150%;
+  background-color: var(--back-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.btn {
+  padding: 16px 24px;
+  color: var(--white-color);
+  font-family: inherit;
+  font-size: inherit;
+  background-color: var(--accent-color);
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--accent-color-hover);
+}
+
+.btn:active {
+  background-color: var(--accent-color-active);
+}
+
+.btn-light {
+  padding: 14px 24px;
+  color: var(--main-color);
+  font-family: inherit;
+  font-size: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-light:hover {
+  color: var(--accent-color-hover);
+}
+
+.btn-light:active {
+  color: var(--accent-color-active);
+}
+
+.input {
+  padding: 14px 16px;
+  color: var(--main-color);
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid var(--grey-color);
+  border-radius: 16px;
+}
+
+.input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--grey-color);
+}
+
+.container {
+  margin: 0 102px;
+}
+
+.title {
+  color: var(--main-color);
+  line-height: 150%;
+}
+
+.prompt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 36px;
+  background-color: var(--white-color);
+  box-shadow: 0px 10px 40px rgba(12, 12, 12, 0.1);
+  border-radius: 20px;
+}
+
+.tab {
+  margin: 80px 0;
+  max-width: 846px;
+}
+
+.tab__navigation {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tab__navigation-btn {
+  padding: 20px 24px;
+  color: var(--main-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 150%;
+  background-color: var(--grey-color);
+  border: none;
+  border-radius: 20px 20px 0px 0px;
+  cursor: pointer;
+}
+
+.tab__navigation-btn_active {
+  color: var(--accent-color);
+  background-color: var(--white-color);
+}
+
+.tab__toggle {
+  display: none;
+}
+
+.tab__content {
+  background: var(--white-color);
+  border-radius: 0px 20px 20px 20px;
+}
+
+.tab__content_hidden {
+  display: none;
+}
+
+.bike-info {
+  padding: 40px 0;
+}
+
+.bike-info__header {
+  display: grid;
+  grid-template-columns: minmax(0, 290px) 1fr;
+  gap: 71px;
+  padding-right: 60px;
+}
+
+.bike-info__picture {
+  position: relative;
+  overflow: hidden;
+}
+
+.bike-info__img {
+  position: absolute;
+  right: 0;
+  width: 358px;
+  max-width: unset;
+  height: auto;
+  max-height: 100%;
+  transition: .3s;
+}
+
+.tab__content:not(.tab__content_hidden) .bike-info__img {
+  animation: slide .3s forwards ease-in-out;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.bike-info__title {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.bike-info__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.bike-info__body {
+  padding: 0 60px;
+  padding-bottom: 0;
+}
+
+.bike-info__body::before {
+  content: '';
+  display: block;
+  margin: 40px 0;
+  height: 1px;
+  background-color: var(--grey-color);
+}
+
+.bike-info__subtitle {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.bike-info__features {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  max-width: 590px;
+  column-count: 2;
+  column-gap: 10px;
+  line-height: 150%;
+  list-style-position: inside;
+}
+
+.bike-info__feature {
+  margin-bottom: 16px;
+}
+
+.bike-info__feature_icon {
+  padding-left: 36px;
+  list-style-type: none;
+  background-image: url(../img/bike.svg);
+  background-repeat: no-repeat;
+}
+
+.bike-info__add-feature {
+  display: grid;
+  grid-template-columns: minmax(128px, 351px) auto;
+  gap: 15px 24px;
+  margin-bottom: 40px;
+  max-width: 503px;
+}
+
+@media (max-width: 1023px) {
+  .btn {
+    padding: 16px;
+    font-size: 14px;
+    border-radius: 16px;
+  }
+
+  .btn-light {
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  .input {
+    padding: 16px;
+    font-size: 14px;
+    border-radius: 16px;
+  }
+
+  .prompt {
+    padding: 30px 20px;
+    gap: 15px;
+  }
+
+  .prompt__ok,
+  .prompt__cancel {
+    flex-grow: 1;
+  }
+
+  .tab__navigation {
+    display: none;
+  }
+
+  .tab__contents {
+    display: grid;
+    gap: 20px;
+  }
+
+  .tab__content {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .tab__toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 21px 20px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    background: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .tab__toggle-active {
+    color: var(--accent-color);
+  }
+
+  .tab__toggle-active > .tab__toggle-icon {
+    transform: rotate(-180deg);
+  }
+
+  .tab__toggle-icon {
+    flex-shrink: 0;
+  }
+
+  .tab__content_hidden {
+    display: block;
+  }
+
+  .tab__content-content {
+    max-height: 2000px;
+    transition: max-height .3s;
+  }
+
+  .tab__content-content_collapsed {
+    max-height: 0;
+  }
+
+  .bike-info {
+    padding: 30px 0;
+  }
+
+  .bike-info__header {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .bike-info__title {
+    font-size: 24px;
+  }
+
+  .bike-info__paragraph {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .bike-info__img {
+    position: unset;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: unset;
+    max-width: 100%;
+  }
+
+  .bike-info__body {
+    padding: 0 20px;
+  }
+
+  .bike-info__body::before {
+    margin: 30px 0;
+  }
+
+  .bike-info__subtitle {
+    font-size: 16px;
+  }
+
+  .bike-info__features {
+    margin-bottom: 30px;
+    max-width: unset;
+    column-count: unset;
+    font-size: 14px;
+  }
+
+  .bike-info__feature {
+    margin-bottom: 15px;
+  }
+
+  .bike-info__add-feature {
+    grid-template-columns: unset;
+    margin-bottom: 30px;
+    max-width: unset;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    margin: 0 20px;
+  }
+}
